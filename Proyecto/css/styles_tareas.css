@@ -1,0 +1,73 @@
+/* CONTENEDOR PRINCIPAL DE TAREAS */
+.task-grid {
+    display: grid;
+    /* Esto las pone en horizontal y las hace responsivas automáticamente */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* LA TARJETA INDIVIDUAL */
+.task-card {
+    background: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border-left: 6px solid #ccc; /* Borde lateral por defecto */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* COLOR PARA PRIORIDAD ALTA */
+.task-card.high-priority {
+    border-left-color: #e74c3c;
+}
+
+/* ENCABEZADO DE LA CARD */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+}
+
+.tag {
+    background: #f0f0f0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.tag.info {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+/* PIE DE LA CARD (BOTONES) */
+.task-footer {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-icon {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-icon:hover {
+    background: #f9f9f9;
+}
+
+/* Desktop Adjustment */
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+    }
+}
