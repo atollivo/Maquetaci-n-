@@ -1,67 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLATAFORMA SENA</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLATAFORMA SENA</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <h1 class="logo">SENA</h1>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="tareas.html">Tareas</a></li>
-                <li><a href="#info">Progreso</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <div class="menu-toggle">☰</div>
-        </nav>
-    </header>
 
-    <!-- MAIN -->
-    <main class="container">
+<header class="header">
+<nav class="navbar">
 
-        <!-- INTRO -->
-        <section id="inicio" class="intro">
-            <h2>Bienvenido aprendiz</h2>
-            <p>Gestiona tus tareas de formación de manera fácil y organizada.</p>
-            <button class="btn">Comenzar</button>
-        </section>
+<h1 class="logo">SENA</h1>
 
-        <!-- INFORMACIÓN -->
-        <section id="info" class="info">
-            <h3>¿Qué puedes hacer?</h3>
-            <ul>
-                <li>✔ Crear tareas</li>
-                <li>✔ Organizar actividades</li>
-                <li>✔ Mejorar tu productividad</li>
-            </ul>
-        </section>
+<div class="menu-toggle">☰</div>
 
-        <!-- TARJETAS -->
-        <section id="tareas" class="cards">
-            <div class="card">
-                <h4>Gestión</h4>
-                <p>Administra tus tareas fácilmente.</p>
-            </div>
+<ul class="nav-links">
+<li><a href="index.html" class="active">Inicio</a></li>
+<li><a href="tareas.html">Tareas</a></li>
+<li><a href="progreso.html">Progreso</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
 
-            <div class="card">
-                <h4>Organización</h4>
-                <p>Mantén todo en orden.</p>
-            </div>
-            <div class="card">
-                <h4>Progreso</h4>
-                <p>Visualiza tus avances.</p>
-            </div>
-        </section>
-    </main>
+</nav>
+</header>
 
-    <!-- FOOTER -->
-    <footer id="contacto" class="footer">
-        <p>© 2026 SENA - Proyecto académico</p>
-        <p>Todos los derechos reservados</p>
-    </footer>
+<main class="container">
+
+<section class="intro">
+<h2>Bienvenido aprendiz</h2>
+<p>Gestiona tus tareas de formación de manera fácil y organizada.</p>
+<button class="btn">Comenzar</button>
+</section>
+
+<section class="info">
+<h3>¿Qué puedes hacer?</h3>
+<ul>
+<li>✔ Crear tareas</li>
+<li>✔ Organizar actividades</li>
+<li>✔ Mejorar tu productividad</li>
+</ul>
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h4>Gestión</h4>
+<p>Administra tus tareas fácilmente.</p>
+</div>
+
+<div class="card">
+<h4>Organización</h4>
+<p>Mantén todo en orden.</p>
+</div>
+
+<div class="card">
+<h4>Progreso</h4>
+<p>Visualiza tus avances.</p>
+</div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+<p>© 2026 SENA</p>
+</footer>
+
+<script>
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-links");
+
+toggle.addEventListener("click", () => {
+nav.classList.toggle("active");
+});
+</script>
+
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tareas</title>
+<title>Contacto</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,19 +17,28 @@
 
 <ul class="nav-links">
 <li><a href="index.html">Inicio</a></li>
-<li><a href="tareas.html" class="active">Tareas</a></li>
+<li><a href="tareas.html">Tareas</a></li>
 <li><a href="progreso.html">Progreso</a></li>
-<li><a href="contacto.html">Contacto</a></li>
+<li><a href="contacto.html" class="active">Contacto</a></li>
 </ul>
 
 </nav>
 </header>
 
-<main class="container">
+<main class="container" id="contacto-page">
 
-<section class="intro">
-<h2>Gestión de Tareas</h2>
-<p>Aquí podrás administrar tus tareas.</p>
+<section class="contact-card">
+
+<h2>Contacto</h2>
+<p>Escríbenos para soporte o dudas del proyecto.</p>
+
+<form>
+<input type="text" placeholder="Nombre" required>
+<input type="email" placeholder="Correo" required>
+<textarea placeholder="Mensaje"></textarea>
+<button class="btn">Enviar</button>
+</form>
+
 </section>
 
 </main>

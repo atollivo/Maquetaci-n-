@@ -1,145 +1,176 @@
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 /* VARIABLES */
 :root {
-    --color-primary: #39A900;
-    --color-secondary: #2c3e50;
-    --color-background: #f4f6f8;
-    --color-white: #ffffff;
-    --color-text: #333;
+--color-primary: #39A900;
+--color-secondary: #2c3e50;
+--color-background: #f4f6f8;
+--color-white: #fff;
+--color-text: #333;
 
-    --spacing-small: 8px;
-    --spacing-medium: 16px;
-    --spacing-large: 32px;
+--spacing-small: 8px;
+--spacing-medium: 16px;
+--spacing-large: 32px;
 
-    --border-radius: 8px;
+--border-radius: 8px;
 }
 
 /* BODY */
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--color-background);
-    color: var(--color-text);
+font-family: Arial;
+background: var(--color-background);
+color: var(--color-text);
 }
 
 /* HEADER */
 .header {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: var(--spacing-medium);
+background: var(--color-primary);
+color: white;
+padding: 16px;
 }
 
-/* NAVBAR */
+/* NAV */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
 }
 
 .logo {
-    font-size: 1.5rem;
+font-size: 1.5rem;
 }
 
-/* LINKS */
+/* NAV LINKS MOBILE FIRST */
 .nav-links {
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    gap: var(--spacing-small);    
+list-style: none;
+display: none;
+flex-direction: column;
+gap: 10px;
+position: absolute;
+top: 60px;
+right: 0;
+background: var(--color-primary);
+padding: 15px;
+border-radius: 8px;
+}
+
+.nav-links.active {
+display: flex;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: var(--color-white);
+color: white;
+text-decoration: none;
+transition: 0.2s;
 }
 
-/* MENU */
+.nav-links a:hover {
+opacity: 0.8;
+}
+
+/* ACTIVE PAGE */
+.nav-links a.active {
+font-weight: bold;
+border-bottom: 2px solid white;
+}
+
+/* HAMBURGER */
 .menu-toggle {
-    font-size: 1.5rem;
-    cursor: pointer;
+font-size: 1.5rem;
+cursor: pointer;
 }
 
-/* CONTENEDOR */
+/* CONTAINER */
 .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: var(--spacing-medium);
+max-width: 1000px;
+margin: auto;
+padding: 16px;
 }
 
-/* SECCIONES */
+/* SECTIONS */
 section {
-    margin-bottom: var(--spacing-large);
+margin-bottom: 32px;
 }
 
-/* BOTÓN */
+/* BUTTON */
 .btn {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: 10px 20px;
-    border: none;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    margin-top: var(--spacing-small);
-}
-
-/* LISTA */
-ul {
-    margin-top: var(--spacing-small);
-    padding-left: 20px;
+background: var(--color-primary);
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
 }
 
 /* CARDS */
 .cards {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-medium);
+display: flex;
+flex-direction: column;
+gap: 16px;
 }
 
 .card {
-    background-color: var(--color-white);
-    padding: var(--spacing-medium);
-    border-radius: var(--border-radius);
+background: white;
+padding: 16px;
+border-radius: 8px;
 }
 
 /* FOOTER */
 .footer {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    text-align: center;
-    padding: var(--spacing-small);
+background: var(--color-secondary);
+color: white;
+text-align: center;
+padding: 10px;
 }
 
-.footer p {
-    margin: 5px 0;
+/* CONTACTO */
+#contacto-page {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 70vh;
 }
 
-/* RESPONSIVE */
+.contact-card {
+background: white;
+padding: 32px;
+border-radius: 12px;
+width: 100%;
+max-width: 500px;
+}
+
+.contact-card input,
+.contact-card textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ddd;
+border-radius: 8px;
+}
+
+/* DESKTOP */
 @media (min-width: 768px) {
-    .cards {
-        flex-direction: row;
-    }
 
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .menu-toggle {
-        display: none;
-    }
+.nav-links {
+display: flex !important;
+position: static;
+flex-direction: row;
+background: transparent;
+padding: 0;
+gap: 20px;
 }
 
-html {
-    scroll-behavior: smooth;
+.menu-toggle {
+display: none;
 }
 
-section {
-    border: 2px solid red;
+.cards {
+flex-direction: row;
+}
 }
