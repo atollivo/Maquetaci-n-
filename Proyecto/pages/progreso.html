@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENA - Progreso</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <h1 class="logo">SENA</h1>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="../Index.html">Inicio</a></li>
+            <li><a href="tareas.html">Tareas</a></li>
+            <li><a href="progreso.html" class="active">Progreso</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="intro">
+        <h2>Tu Progreso</h2>
+        <p>Visualiza aquí el avance de tus actividades académicas.</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 SENA</p>
+</footer>
+
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
