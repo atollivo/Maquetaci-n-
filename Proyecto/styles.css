@@ -135,3 +135,11 @@ ul {
         display: none;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    border: 2px solid red;
+}
