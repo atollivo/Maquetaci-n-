@@ -32,7 +32,37 @@ body {
     background-color: var(--color-primary);
     color: var(--color-white);
     padding: var(--spacing-medium);
-    text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+/* LINKS */
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: var(--spacing-small);    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+/* MENU */
+.menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 /* CONTENEDOR */
@@ -89,5 +119,15 @@ ul {
 @media (min-width: 768px) {
     .cards {
         flex-direction: row;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .menu-toggle {
+        display: none;
     }
 }
