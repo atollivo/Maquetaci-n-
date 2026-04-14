@@ -1,0 +1,93 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --color-primary: #39A900;
+    --color-secondary: #2c3e50;
+    --color-background: #f4f6f8;
+    --color-white: #ffffff;
+    --color-text: #333;
+
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+
+    --border-radius: 8px;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* HEADER */
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-medium);
+    text-align: center;
+}
+
+/* CONTENEDOR */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: var(--spacing-medium);
+}
+
+/* SECCIONES */
+section {
+    margin-bottom: var(--spacing-large);
+}
+
+/* BOTÓN */
+.btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin-top: var(--spacing-small);
+}
+
+/* LISTA */
+ul {
+    margin-top: var(--spacing-small);
+    padding-left: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+}
+
+.card {
+    background-color: var(--color-white);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    text-align: center;
+    padding: var(--spacing-small);
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+    }
+}
