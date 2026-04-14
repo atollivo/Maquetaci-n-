@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENA - Tareas</title>
-    <link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/styles_global.css">
+<link rel="stylesheet" href="../css/styles_tareas.css">
 </head>
 <body>
 
@@ -24,7 +25,36 @@
 <main class="container">
     <section class="intro">
         <h2>Gestión de Tareas</h2>
-        <p>Aquí podrás administrar tus tareas de formación.</p>
+        <p>Organiza tus actividades de formación por prioridad.</p>
+        <button class="btn">+ Nueva Tarea</button>
+    </section>
+
+    <section class="task-grid">
+        <div class="task-card high-priority">
+            <div class="task-header">
+                <span class="tag">Urgente</span>
+                <span class="date">Entrega: 20 Abr</span>
+            </div>
+            <h4>Prototipo en Figma</h4>
+            <p>Finalizar el flujo de navegación para el módulo de login.</p>
+            <div class="task-footer">
+                <button class="btn-icon">✏️</button>
+                <button class="btn-icon">✔️</button>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <div class="task-header">
+                <span class="tag info">Normal</span>
+                <span class="date">Entrega: 25 Abr</span>
+            </div>
+            <h4>Guía de Algoritmos</h4>
+            <p>Resolver los ejercicios de lógica de programación del taller 3.</p>
+            <div class="task-footer">
+                <button class="btn-icon">✏️</button>
+                <button class="btn-icon">✔️</button>
+            </div>
+        </div>
     </section>
 </main>
 

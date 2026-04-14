@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENA - Contacto</title>
-    <link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/styles_global.css">
+<link rel="stylesheet" href="../css/styles_contacto.css">
 </head>
 <body>
 
@@ -22,16 +23,35 @@
 </header>
 
 <main class="container" id="contacto-page">
-    <section class="contact-card">
-        <h2>Contacto</h2>
-        <p>Escríbenos para soporte o dudas del proyecto.</p>
-        <form>
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo" required>
-            <textarea placeholder="Mensaje"></textarea>
-            <button type="button" class="btn">Enviar</button>
-        </form>
-    </section>
+    <div class="contact-wrapper">
+        <section class="contact-info">
+            <h2>Hablemos</h2>
+            <p>Si tienes dudas sobre el proyecto o necesitas soporte técnico, estamos aquí para ayudarte.</p>
+            <ul class="contact-details">
+                <li>📍 Centro de Formación SENA</li>
+                <li>📧 soporte@sena.edu.co</li>
+                <li>📞 +57 300 000 0000</li>
+            </ul>
+        </section>
+
+        <section class="contact-card">
+            <form>
+                <div class="input-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="input-group">
+                    <label>Correo Electrónico</label>
+                    <input type="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Tu Mensaje</label>
+                    <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-full">Enviar Mensaje</button>
+            </form>
+        </section>
+    </div>
 </main>
 
 <footer class="footer">
