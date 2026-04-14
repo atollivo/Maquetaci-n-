@@ -115,6 +115,10 @@ ul {
     padding: var(--spacing-small);
 }
 
+.footer p {
+    margin: 5px 0;
+}
+
 /* RESPONSIVE */
 @media (min-width: 768px) {
     .cards {
